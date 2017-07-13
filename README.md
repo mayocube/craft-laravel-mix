@@ -7,9 +7,17 @@ Integrates Laravel Mix Cache Busting plugin with the Craft CMS Twig template eng
 To install Laravel Mix Cache Busting, follow these steps:
 
 1. Download & unzip the file and place the `laravelmix` directory into your `craft/plugins` directory
-2.  -OR- do a `git clone https://github.com/Wiejeben/laravelmix` directly into your `craft/plugins` folder.  You can then update it with `git pull`
+2.  -OR- do a `git clone https://github.com/Wiejeben/laravelmix.git` directly into your `craft/plugins` folder.  You can then update it with `git pull`
 3. Install plugin in the Craft Control Panel under Settings > Plugins
 4. The plugin folder should be named `laravelmix` for Craft to see it.  GitHub recently started appending `-master` (the branch name) to the name of the folder for zip file downloads.
+
+To setup Laravel Mix:
+1. First of all, make sure you understand how Laravel Mix is build up and how to maintain it: [Official documentation](https://laravel.com/docs/5.4/mix)
+2. Copy `package.json` and `webpack.mix.js` to the root of your Craft CMS installation
+3. Create predefined `resources/assets/js/app.js` and `resources/assets/sass/app.scss`
+4. Run `npm install` to gather the required node dependencies
+5. Specify the public path in `webpack.mix.js` to be `public`: `mix.setPublicPath('public')`
+6. See [Running Mix]https://laravel.com/docs/5.4/mix#running-mix to learn about how to get webpack to run
 
 Laravel Mix works on Craft 2.4.x and Craft 2.5.x.
 
@@ -22,8 +30,6 @@ If you've ever been confused and overwhelmed about getting started with Webpack 
 ## Official Documentation
 
 Documentation for Laravel Mix Cache Busting can be found on the [Laravel website](https://laravel.com/docs/5.4/mix#versioning-and-cache-busting).
-
-* Release it
 
 ## Laravel Mix Cache Busting Changelog
 
