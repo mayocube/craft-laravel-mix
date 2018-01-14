@@ -3,22 +3,16 @@
  * Laravel Mix Cache Busting plugin for Craft CMS
  *
  * Twig extension
- *
- * @author    Maarten de Graaf
- * @copyright Copyright (c) 2017 Maarten de Graaf.
- * @link      http://maarten.co.uk
- * @package   Laravel Mix Cache Busting plugin for Craft CMS
- * @since     1.0.0
  */
 
-namespace Craft;
+namespace Wiejeben\LaravelMix;
 
 class LaravelMixTwigExtension extends \Twig_Extension
 {
     /**
      * Returns the name of the extension.
      *
-     * @return string The extension name
+     * @return string
      */
     public function getName()
     {
@@ -34,9 +28,9 @@ class LaravelMixTwigExtension extends \Twig_Extension
      */
     public function getFunctions()
     {
-        return array(
-            'mix' => new \Twig_Function_Method($this, 'mix'),
-        );
+        return [
+            'mix' => new \Twig_SimpleFunction($this, 'mix'),
+        ];
     }
 
     /**
@@ -45,7 +39,7 @@ class LaravelMixTwigExtension extends \Twig_Extension
      * @param  string $file
      *
      * @return string
-     * @throws HttpException
+     * @throws \HttpException
      */
     public function mix($file)
     {
@@ -59,6 +53,6 @@ class LaravelMixTwigExtension extends \Twig_Extension
             return $manifest[$file];
         }
 
-        throw new HttpException(500, "File {$file} not defined in asset manifest.");
+        throw new \HttpException(500, "File {$file} not defined in asset manifest.");
     }
 }
