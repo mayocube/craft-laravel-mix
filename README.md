@@ -12,7 +12,7 @@ To install Laravel Mix Cache Busting, follow these steps:
 
 To setup Laravel Mix:
 1. First of all, make sure you understand how Laravel Mix is build up and how to maintain it: [Official documentation](https://laravel.com/docs/5.4/mix)
-2. Copy `package.json` and `webpack.mix.js` to the root of your Craft CMS installation
+2. Copy `package.json` and `webpack.mix.js` from [laravel/laravel](https://github.com/laravel/laravel) to the root of your Craft CMS installation
 3. Create predefined `resources/assets/js/app.js` and `resources/assets/sass/app.scss`
 4. Run `npm install` to gather the required node dependencies
 5. Specify the public path in `webpack.mix.js` to be `public`: `mix.setPublicPath('public')`
