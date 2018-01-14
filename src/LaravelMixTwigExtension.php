@@ -7,6 +7,8 @@
 
 namespace Wiejeben\LaravelMix;
 
+use yii\web\HttpException;
+
 class LaravelMixTwigExtension extends \Twig_Extension
 {
     /**
@@ -29,7 +31,7 @@ class LaravelMixTwigExtension extends \Twig_Extension
     public function getFunctions()
     {
         return [
-            'mix' => new \Twig_SimpleFunction($this, 'mix'),
+            'mix' => new \Twig_SimpleFunction('mix', [$this, 'mix']),
         ];
     }
 
@@ -39,9 +41,9 @@ class LaravelMixTwigExtension extends \Twig_Extension
      * @param  string $file
      *
      * @return string
-     * @throws \HttpException
+     * @throws HttpException
      */
-    public function mix($file)
+    public function mix(string $file)
     {
         static $manifest = null;
 
@@ -53,6 +55,6 @@ class LaravelMixTwigExtension extends \Twig_Extension
             return $manifest[$file];
         }
 
-        throw new \HttpException(500, "File {$file} not defined in asset manifest.");
+        throw new HttpException(500, "File '{$file}' not defined in asset manifest.");
     }
 }
