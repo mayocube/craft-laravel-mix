@@ -7,9 +7,8 @@ Integrates Laravel Mix Cache Busting plugin with the Craft CMS Twig template eng
 To install Laravel Mix Cache Busting, follow these steps:
 
 1. Download & unzip the file and place the `laravelmix` directory into your `craft/plugins` directory
-2.  -OR- do a `git clone https://github.com/Wiejeben/laravelmix.git` directly into your `craft/plugins` folder.  You can then update it with `git pull`
-3. Install plugin in the Craft Control Panel under Settings > Plugins
-4. The plugin folder should be named `laravelmix` for Craft to see it.  GitHub recently started appending `-master` (the branch name) to the name of the folder for zip file downloads.
+2. Install plugin in the Craft Control Panel under Settings > Plugins
+3. The plugin folder should be named `laravelmix` for Craft to see it.
 
 To setup Laravel Mix:
 1. First of all, make sure you understand how Laravel Mix is build up and how to maintain it: [Official documentation](https://laravel.com/docs/5.4/mix)

@@ -45,7 +45,7 @@ class LaravelMixPlugin extends BasePlugin
      */
     public function getDocumentationUrl()
     {
-        return 'https://github.com/Wiejeben/laravelmix/blob/master/README.md';
+        return 'https://github.com/Wiejeben/craft-laravel-mix/blob/master/README.md';
     }
 
     /**
@@ -57,7 +57,7 @@ class LaravelMixPlugin extends BasePlugin
      */
     public function getReleaseFeedUrl()
     {
-        return 'https://github.com/Wiejeben/laravelmix/master/releases.json';
+        return 'https://github.com/Wiejeben/craft-laravel-mix/master/releases.json';
     }
 
     /**
