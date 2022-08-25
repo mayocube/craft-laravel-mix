@@ -1,9 +1,10 @@
 {
   "name": "wiejeben/craft-laravel-mix",
   "description": "Integrates Laravel Mix Cache Busting plugin with the Craft Twig template engine.",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "type": "craft-plugin",
   "minimum-stability": "dev",
+  "license": "MIT",
   "require": {
     "craftcms/cms": "^4.0.0"
   },
