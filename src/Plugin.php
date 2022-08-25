@@ -12,7 +12,7 @@ namespace Wiejeben\LaravelMix;
 
 class Plugin extends \craft\base\Plugin
 {
-    public function init()
+    public function init(): void
     {
         parent::init();
 

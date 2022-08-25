@@ -4,7 +4,9 @@ Integrates Laravel Mix Cache Busting plugin with the Craft Twig template engine.
 
 ## Requirements
 
-This plugin requires Craft CMS 3.0.0 or later. If you are using Craft CMS 2, use [version 1.0.0](https://github.com/Wiejeben/craft-laravel-mix/releases/tag/1.0.0).
+This plugin requires Craft CMS 4.0.0 or later.  
+For Craft CMS 2, use [version 1.0.0](https://github.com/Wiejeben/craft-laravel-mix/releases/tag/1.0.0).  
+For Craft CMS 3, use [version 2.1.0](https://github.com/Wiejeben/craft-laravel-mix/releases/tag/2.1.0).
 
 ## Installation
 
@@ -29,6 +31,6 @@ If you've ever been confused and overwhelmed about getting started with Webpack 
 
 ## Official Documentation
 
-Documentation for Laravel Mix Cache Busting can be found on the [Laravel website](https://laravel.com/docs/5.4/mix#versioning-and-cache-busting).
+Documentation for Laravel Mix Cache Busting can be found on the [Laravel website](https://laravel.com/docs/8.x/mix#versioning-and-cache-busting).
 
 Brought to you by [Maarten de Graaf](http://maarten.co.uk)
