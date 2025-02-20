@@ -4,10 +4,11 @@ Integrates Laravel Mix Cache Busting plugin with the Craft Twig template engine.
 
 ## Requirements
 
-This plugin requires Craft CMS 4.0.0 or later.  
+This plugin requires Craft CMS 5.0.0 or later.  
 For Craft CMS 2, use [version 1.0.0](https://github.com/Wiejeben/craft-laravel-mix/releases/tag/1.0.0).  
 For Craft CMS 3, use [version 2.1.0](https://github.com/Wiejeben/craft-laravel-mix/releases/tag/2.1.0).
-
+For Craft CMS 4, use [version 2.1.0](https://github.com/Wiejeben/craft-laravel-mix/releases/tag/4.0.3).
+For Craft CMS 5, use [version 5.1.0](https://github.com/mayocube/craft-laravel-mix/releases/tag/5.0.0).
 ## Installation
 
 To install the plugin, follow these instructions.
@@ -18,7 +19,7 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require Wiejeben/craft-laravel-mix
+        composer require mayocube/craft-laravel-mix
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Laravel Mix Cache Busting Twig Extension.
 

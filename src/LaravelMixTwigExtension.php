@@ -5,7 +5,7 @@
  * Twig extension
  */
 
-namespace Wiejeben\LaravelMix;
+namespace Mayocube\LaravelMix;
 
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;

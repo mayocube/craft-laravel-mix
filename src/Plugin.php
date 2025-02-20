@@ -8,7 +8,7 @@
  * @package   Laravel Mix Cache Busting plugin for Craft CMS
  */
 
-namespace Wiejeben\LaravelMix;
+namespace Mayocube\LaravelMix;
 
 class Plugin extends \craft\base\Plugin
 {
